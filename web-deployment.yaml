@@ -3,17 +3,14 @@ kind: Deployment
 metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
-  creationTimestamp: "2024-08-20T17:12:00Z"
   generation: 3
   labels:
     app: synergychat-web
   name: synergychat-web
   namespace: default
-  resourceVersion: "3075"
-  uid: f4cbb27f-9d82-40b8-ba25-9d7227ee1a8c
 spec:
   progressDeadlineSeconds: 600
-  replicas: 1
+  replicas: 3
   revisionHistoryLimit: 10
   selector:
     matchLabels:
